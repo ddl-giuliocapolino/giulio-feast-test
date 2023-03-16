@@ -115,7 +115,7 @@ driver_stats_push_source = PushSource(
 # has been changed to the push source. This allows fresh features to be directly pushed
 # to the online store for this feature view.
 driver_stats_fresh_fv = FeatureView(
-    name="driver_hourly_stats_fresh",
+    name="driver_hourly_stats",
     entities=[driver],
     ttl=timedelta(weeks=52 * 10),  # Set to be very long for example purposes only
     schema=[
