@@ -4,11 +4,7 @@ provider: local
 offline_store:
     type: file
 online_store:
-    type: snowflake.online
-    account: kma55258
-    role: lknkn
-    warehouse: Nlkasncvk
-    database: DIABETES
-    user: ${FEAST_SNOWFLAKE_ONLINE_USER}
-    password: ${FEAST_SNOWFLAKE_ONLINE_PASSWORD}
+    type: redis
+    redis_type: redis
+    connection_string: jjjjj:6,password=${FEAST_REDIS_PASSWORD},ssl=true
 entity_key_serialization_version: 2
