@@ -6,5 +6,5 @@ offline_store:
 online_store:
     type: redis
     redis_type: redis
-    connection_string: jjjjj:6,password=${FEAST_REDIS_PASSWORD},ssl=true
+    connection_string: ccc:4,password=${FEAST_REDIS_PASSWORD},ssl=true
 entity_key_serialization_version: 2
