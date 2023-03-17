@@ -4,5 +4,11 @@ provider: local
 offline_store:
     type: file
 online_store:
-    type: datastore
+    type: snowflake.online
+    account: kma55258
+    role: lknkn
+    warehouse: Nlkasncvk
+    database: DIABETES
+    user: ${FEAST_SNOWFLAKE_ONLINE_USER}
+    password: ${FEAST_SNOWFLAKE_ONLINE_PASSWORD}
 entity_key_serialization_version: 2
