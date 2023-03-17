@@ -4,11 +4,5 @@ provider: local
 offline_store:
     type: bigquery
 online_store:
-    type: snowflake.online
-    account: kma55258
-    role: jjj
-    warehouse: jjj
-    database: jjjj
-    user: ${FEAST_SNOWFLAKE_ONLINE_USER}
-    password: ${FEAST_SNOWFLAKE_ONLINE_PASSWORD}
+    type: sqlite
 entity_key_serialization_version: 2
