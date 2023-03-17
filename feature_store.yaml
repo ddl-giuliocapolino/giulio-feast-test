@@ -4,5 +4,7 @@ provider: local
 offline_store:
     type: file
 online_store:
-    type: sqlite
+    type: redis
+    redis_type: redis
+    connection_string: gggggggg:4,password=${FEAST_REDIS_PASSWORD},ssl=true
 entity_key_serialization_version: 2
